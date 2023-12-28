@@ -1,0 +1,39 @@
+{
+	"id": "your extension id",
+	"name": "your extension name",
+	"description": "your extension description",
+	"displayName": "your extension display name",
+	"version": "0.0.0",
+	"publisher": "your name",
+	"engines": {
+		"HBuilderX": "^2.7.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"main": "./extension",
+	"activationEvents": [
+		"onCommand:code.line.count"
+	],
+	"contributes": {
+		"commands": [{
+			"command": "code.line.count",
+			"title": "统计代码行"
+		}],
+		"menus": {
+			"explorer/context": [{
+					"command": "code.line.count",
+					"group": "z_commands",
+					"when": "explorerResourceCount == 1 && explorerResourceIsFolder"
+				},
+				{
+					"group": "z_commands"
+				}
+			]
+		}
+	},
+	"extensionDependencies": [
+		"plugin-manager"
+	],
+	"dependencies": {}
+}
