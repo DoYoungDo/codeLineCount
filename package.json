@@ -1,10 +1,10 @@
 {
-	"id": "your extension id",
-	"name": "your extension name",
-	"description": "your extension description",
-	"displayName": "your extension display name",
-	"version": "0.0.0",
-	"publisher": "your name",
+	"id": "code-lint-count",
+	"name": "统计代码行",
+	"description": "统计代码行",
+	"displayName": "统计代码行",
+	"version": "0.0.1",
+	"publisher": "Doyounf",
 	"engines": {
 		"HBuilderX": "^2.7.0"
 	},
